@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- import bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <!-- import slick -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <!-- import font-awesome -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- import css js -->
+    <link rel="stylesheet" type="text/css" href="./index.css">
+    <script type="text/javascript" src="./script.js"></script>
+    <!-- import ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+    <style>
+      
+        .navbar-nav li:hover>ul.dropdown-menu {
+                  display: block;
+              }
+              
+              .dropdown-submenu {
+                  position: relative;
+              }
+              
+              .dropdown-submenu>.dropdown-menu {
+                  top: 0%;
+                  left: 100%;
+                  margin-top: -3px;
+              }
+              
+              .dropdown-menu>li>a:hover:after {
+                  transform: rotate(-90deg);
+                  transition: 1s;
+              }
+         
+      </style>
+    <style>
+
+
+        #picture{
+            width:45%;
+            height: 50%;
+        }
+    
+        @media (max-width:600px){
+    
+            #picture{
+                width:100%;
+                height:90%;
+             }
+        }
+    
+    </style>
+  <title>祁門紅茶</title>
+
+</head>
+
+<body>
+    <!-- navbar -->
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">茶顏觀色</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                不發酵茶
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="./non-fermented-tea-1.html">碧螺春</a></li>
+                                <li><a class="dropdown-item" href="./non-fermented-tea-2.html">龍井茶</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                部分發酵茶
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="./part-1.html">白毫銀針</a></li>
+                                <li><a class="dropdown-item" href="./part-2.html">文山包種茶</a></li>
+                                <li><a class="dropdown-item" href="./part-3.html">凍頂烏龍茶</a></li>
+                                <li><a class="dropdown-item" href="./part-4.html">高山茶</a></li>
+                                <li><a class="dropdown-item" href="./part-5.html">鐵觀音</a></li>
+                                <li><a class="dropdown-item" href="./part-6.html">白毫烏龍茶</a></li>
+                    
+                            </ul>
+                        </li>
+                       
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">全發酵茶</a>
+        
+                            <!-- 下拉式選單選項 Dropdown items -->
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./full-1.html">改良紅茶</a></li>
+                                 <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">世界三大紅茶</a>
+        
+                                    <!-- 子選單Level 2 -->
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="./full-6.html">烏巴紅茶</a></li>
+                                        <li><a class="dropdown-item" href="./full-7.html">祁門紅茶</a></li>
+                                        <li><a class="dropdown-item" href="./full-8.html">大吉嶺紅茶</a></li>
+                                        </li>
+                                        </ul>
+                                </li>
+                                </ul>
+                       
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                後發酵茶
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="./after-1.html">普洱茶</a></li>
+
+                            </ul>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    行程安排
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="3day-2night.html">三天兩夜</a></li>
+                                    <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">當天來回</a>
+        
+                                        <!-- 子選單Level 2 -->
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="non-tour.html">不發酵茶</a></li>
+                                            <li><a class="dropdown-item" href="part-tour.html">部分發酵茶</a></li>
+                                            <li><a class="dropdown-item" href="after-tour.html">全發酵茶</a></li>
+                                </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <pre>
+
+        <h1>                                    祁門紅茶</h1>
+    <div id="word">
+            <h3>                別稱：</h3>        
+    <h5>
+                                中國的干邑白蘭地、威爾斯王子茶</h5> 
+    
+            <h3>                歷史：</h3>
+            <h5>        
+                                光緒元年（1875），胡元龍在培桂山房籌建日順茶廠，用自產茶葉，請寧州師傅舒基立按寧紅經驗試製紅茶。
+
+                                清朝光緒年間以前，祁門只產綠茶，不產紅茶。
+
+                                1875年，安徽黟縣有個名叫餘干臣的人，在福建罷官回原籍經商，因見了紅茶暢銷多利，便在至德縣堯渡街設立紅
+                
+                                茶莊，仿“閩紅茶”製法，開始試製紅茶。
+
+                                1876年，余氏又先後在祁門西路鎮、閃里設紅茶分莊，擴大經營。由於祁門一帶自然條件優越，所制紅茶品質超群
+                
+                                出眾，因此，產地不斷擴大，產量不斷提高，聲譽越來越高，在國際紅茶市場上引起了茶商的極大注意，日本人稱
+                
+                                其為玫瑰，英國商人稱之“祁門” 。
+
+                                光緒8年（1883），終於製成色、香、味、形俱佳的上等紅茶，胡云龍也因此成為祁紅創始人之一。
+
+                                餘干臣的弟子學徒有陳尚好等人。從1875年餘干臣在歷口開辦茶莊，陳尚好自幼在茶莊學藝，多年以後學技精湛，
+                
+                                回正沖村自辦茶號尚好坊
+                
+                                https://www.easyatm.com.tw/wiki/祁門紅茶</h5> 
+    
+            <h3>                產地：</h3>
+            <h5>        
+                                出產於中國華東的安徽黃山市祁門縣</h5> 
+    
+            <h3>            外型：</h3>
+            <h5>        
+                            一級茶葉的外形條索緊細，嫩度明顯，長短均勻，色澤潤；香味高濃，具有」祁紅」特有果糖香；湯色紅艷明亮；葉底嫩葉均整，色紅艷。
+
+                            二級茶葉的外形條索細正，嫩度較一級少，色澤潤；茶葉香味醇厚，有」祁紅」的果糖香；湯色紅艷不及一級明亮；葉底芽條均整，發醇適度。
+
+                            三級的外形條索緊實，較二級略粗，整度均勻，面張稍有松條；香味醇正，鮮厚有收斂性，」祁紅」特徵依然顯著；湯色紅明；葉底條整，發醇適度。
+
+                            四級茶葉的外形條索粗實，葉質稍輕，勻淨度較差，色澤帶灰；茶葉整體香味醇正，有相應濃度，仍有」祁紅」風味；湯色紅明較淡；葉底均整度較差，色紅而欠勻，夾有花青。
+
+                            五級茶葉的外形條索較粗，稍有筋片，勻淨度較差，色澤帶灰；茶葉香味醇甜偏淡，但無粗老味；湯色紅淡；葉底花青，稍含梗。
+
+                            六級外形條索較松，夾有片朴，色澤花雜；香味粗淡，濃度不足；水色紅淡，明亮不夠；葉底紅雜，較梗。
+
+                            七級茶葉外形條索松泡，身骨輕，帶片朴梗，色澤桔雜；茶葉沖泡之後香味低淡，有粗老味；湯色淡而不明；葉底粗暗梗顯。
+                
+                            https://www.google.com/amp/s/kknews.cc/culture/b6nmkm.amp   </h5> 
+    
+            <h3>                功效：</h3>
+            <h5>        
+                                祁門紅茶可以提供豐富的核黃素、葉酸、胡蘿蔔素、生育酚及葉綠醌，並且是食品中氟化物的重要源泉。
+
+                                保健功效：提神 生津清熱 利尿 消炎殺菌 解毒 養胃</h5> 
+    </div>
+        </pre>
+
+
+
+
+
+    
+
+
+    <!-- content -->
+
+
+
+    <script>
+        let toggle = document.querySelector('.togglebtn');
+        let guide = document.querySelector('.guidebtn');
+        toggle.onclick = function () {
+            guide.classList.toggle('activate')
+        }
+    </script>
+</body>

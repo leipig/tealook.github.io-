@@ -1,0 +1,84 @@
+.responsive .prev-arrow{
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    z-index: 9;
+}
+
+.responsive .next-arrow{
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    z-index: 9;
+}
+
+.guidebtn{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.guidebtn li{
+    position: absolute;
+    list-style: none;
+    left: 0;
+    transform-origin: 100px;
+    transition: 0.5s;
+    transition-delay: calc(0.1s * var(--i));
+    transform: rotate(0deg) translateX(80px);
+}
+
+.guidebtn li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 50%;
+    transform: rotate(calc(180deg / -6 * var(--i)));
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+    color: #000;
+    transition: 0.5s;
+}
+
+.guidebtn li a:hover{
+    color: #ff1252;
+}
+
+.togglebtn{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+    font-size: 2em;
+    transition: transform 1.25s;
+}
+
+.guidebtn.activate .togglebtn{
+    transform: rotate(360deg);
+}
+
+.guidebtn.activate li{
+    transform: rotate(calc(180deg / 6 * var(--i)));
+}
+
+body{
+    
+    background-color: floralwhite;
+}
+
+img{
+    mix-blend-mode: multiply;
+  }
+
